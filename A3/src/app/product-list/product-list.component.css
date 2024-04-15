@@ -1,0 +1,34 @@
+.wraper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4em;
+  margin-top: 4em;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+h1 {
+  text-align: center;
+}
+
+.product-box {
+  width: 300px;
+  height: 530px;
+  border: 1px solid rgb(223, 209, 209);
+  padding: 2em;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.product-box:hover {
+  transition: transform 0.4s ease-in-out;
+  transform: scale(1.1);
+}
+
+.image {
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

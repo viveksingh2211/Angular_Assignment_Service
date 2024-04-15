@@ -1,0 +1,24 @@
+<div class="navbar" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="https://cdn.telanganatoday.com/wp-content/uploads/2021/09/PharmEasy-logo.jpg"  width="70px" alt="logo" style="border-radius: 50%;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" [routerLink]="['/product']">Product</a>
+        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#" >About Us</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div>
+  <i class="fi fi-br-shopping-cart " style="background-color: black; color: white; padding: 5px; width: 40px; border-radius: 50px;"></i>
+  <button class="btn btn-secondary mx-4">Log In</button>
+</div>
+</div>
+
+<router-outlet></router-outlet>

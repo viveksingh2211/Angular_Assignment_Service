@@ -1,0 +1,24 @@
+.wraper{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    margin-top: 4em;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+
+.product-box{
+    width: 250px;
+    border:1px solid rgb(223, 209, 209);
+    padding:2em ;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+.product-box:hover{
+    transition: transform 0.4s ease-in-out;
+    transform: scale(1.1);
+}

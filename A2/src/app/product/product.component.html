@@ -1,0 +1,15 @@
+<h1 class="my-2">Medicine List</h1>
+<section class="wraper m-5 p-3">
+  @for(p of products; track p){
+  <div class="product-box">
+    <img [src]="p.image" alt="medicineImage" width="200px" />
+    <h3>{{ p.name }}</h3>
+    <h5>$ {{ p.price }}</h5>
+    <button class="btn btn-primary" (click)="onSubmit(p)">Get Detail</button>
+    <br />
+  </div>
+  }
+</section>
+<footer>
+  <p>&copy; 2024 My E-commerce Store</p>
+</footer>

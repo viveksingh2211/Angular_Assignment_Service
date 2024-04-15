@@ -1,0 +1,16 @@
+<h2>employee-list works!</h2>
+
+<table>
+  <tr>
+    @for(employee of employees; track employee) {
+    <li>
+      {{ employee.empId }}
+      <button type="submit" (click)="onSubmit(employee.empId)">
+        Check Details
+      </button>
+    </li>
+    }
+  </tr>
+</table>
+
+<app-employee-detail [emp]="currentEmp"></app-employee-detail>

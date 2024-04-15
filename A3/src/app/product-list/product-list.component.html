@@ -1,0 +1,19 @@
+<h1 class="m-4">Product List</h1>
+<section class="wraper m-5 p-3">
+  @for(p of product; track p){
+  <div class="product-box">
+    <div
+      class="image"
+      [style]="{ 'background-image': 'url(' + p.image + ')' }"
+    ></div>
+    <h3>{{ p.name }}</h3>
+    <h2>$ {{ p.price }}</h2>
+    <br />
+    <button class="btn btn-secondary" (click)="onSubmit(p.id)">Buy Now</button>
+    <br />
+  </div>
+  }
+</section>
+<footer>
+  <p>&copy; 2024 My E-commerce Store</p>
+</footer>

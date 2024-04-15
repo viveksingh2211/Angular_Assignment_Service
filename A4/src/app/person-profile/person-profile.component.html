@@ -1,0 +1,34 @@
+<h1>Profile</h1>
+
+<div class="m-4">
+  <div class="text-center">
+    <img class="my-3" [src]="person.image" width="200" alt="person.name" />
+    <p class="fw-bold">Name: {{ person.name }}</p>
+    <p>Age: {{ person.age }}</p>
+    <p>Location: {{ person.location }}</p>
+  </div>
+
+  <div>
+    <hr />
+    <h4 class="fw-bold">Technologies</h4>
+    <p>{{ person.technologies }}</p>
+    <hr />
+    <h4 class="fw-bold">Education</h4>
+    <p>{{ person.education.degree }}</p>
+    <p>{{ person.education.university }}</p>
+    <hr />
+    <h4 class="fw-bold">Certifications</h4>
+    @for(c of person.certifications; track c){
+    <p>{{ c.name }}</p>
+    <p>{{ c.authority }}</p>
+    <p>{{ c.date_earned }}</p>
+    }
+    <hr />
+    <h4 class="fw-bold">Projects</h4>
+    @for(p of person.projects; track p){
+    <p>{{ p.name }}</p>
+    <p>{{ p.description }}</p>
+    <p>{{ p.technologies_used }}</p>
+    }
+  </div>
+</div>

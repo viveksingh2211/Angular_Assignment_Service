@@ -1,0 +1,20 @@
+
+<h1>Employee List</h1><br>
+
+<table cellspacing="0">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Experience_years</th>
+    <th>Technologies</th>
+  </tr>
+  @for(p of persons; track p){
+  <tr>
+    <td>{{ p.name }}</td>
+    <td>{{ p.age }}</td>
+    <td>{{ p.experience_years }}</td>
+    <td>{{ p.technologies }}</td>
+    <button class="btn btn-secondary mx-3" (click)="onSubmit(p.id)" >Go to profile</button>
+  </tr>
+  }
+</table>

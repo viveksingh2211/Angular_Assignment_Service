@@ -1,0 +1,16 @@
+.image-box{
+    border: 2px solid powderblue;
+    box-shadow:5px 5px 5px 5px rgb(169, 223, 230);
+    border-radius: 5px;
+}
+
+.detail-box{
+    border: 2px solid whitesmoke;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.cart-btn{
+    width: 30px;
+    border-radius: 50px;
+}

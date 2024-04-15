@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: rgb(181, 181, 156);
+    font-weight: 600;
+}
+a{
+    font-weight: 600;
+    text-decoration: none;
+    margin: 20px;
+}
+table {
+  margin: auto;
+}
+
+table td,
+th {
+  padding: 12px;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  background: #fafafa;
+}
+
+tr:first-child {
+  background-color: cadetblue;
+  color: #fff;
+}

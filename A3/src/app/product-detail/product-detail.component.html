@@ -1,0 +1,25 @@
+<h1>Product Detail</h1>
+
+<div class="d-flex text-align-center">
+  <div class="image-box">
+    <img [src]="product.image" alt="product.name" width="400"/>
+  </div>
+  <div class="detail-box mx-5 my-5">
+    <h3>{{ product.name }}</h3>
+    <p class="fw-bold">{{ product.description }}</p>
+    <h3> $ {{ product.price }}</h3>
+    <div class="">
+      <!-- <button class="d-flex gap-2 align-items-center text-align-center"></button> -->
+      <div class="d-flex align-items-center gap-2 ">
+        <button class="btn btn-primary">Add To Cart</button><br>
+        <button class="cart-btn" (click)="counter('sub')">-</button>
+        <br /><P>{{ count }}</P>
+        <button class="cart-btn" (click)="counter('add')">+</button>
+      </div>
+      <div>
+        <h4>features</h4>
+        <p>{{ product.features }}</p>
+      </div>
+    </div>
+  </div>
+</div>
